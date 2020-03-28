@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Registration Page</title>
+        <h:outputStylesheet library="styles" name="main.css" position="last"/>
+    </h:head>
+    <h:body>
+    <ui:include src="/resources/layouts/topNavBar.xhtml" />
+  <b:container>
+  <!-- BEGIN LOGIN FORM -->
+  	<b:row>
+  	 <b:column col-md="8" offset="2" styleClass="app-registration-form">
+  	 <b:row>
+  	 <b:column col-md="10" offset="1">
+  	 	<b:image library="images" name="acme-logo-white.svg" styleClass="app-logo"/>
+  	 	<h3>Don't have an account? Register here!</h3>
+  	 </b:column>
+  	 </b:row>
+  	<h:form id="registrationForm">
+  	
+      <b:row>
+        <b:column col-sm="8" offset="2">
+        <h:outputText value="Please enter a username" for="username" />
+          <b:inputText placeholder="Username" id="username" fieldId="j_username" name="j_username"
+          value="#{user.username}" ajax="true" autocomplete="false" update="@(.message)">
+            <f:facet name="prepend">
+              <b:icon name="user" />
+            </f:facet>
+	      </b:inputText>
+	      <b:column col-md="12" style-class="message">
+          <b:message for="username" />
+        </b:column>
+        </b:column>
+      </b:row>
+      
+      <b:row>
+        <b:column col-md="8" offset="2">
+        <h:outputText value="Please enter your password." />
+          <b:inputSecret placeholder="Password" id="password" fieldId="j_password" name="j_password"
+          value="#{user.password}" ajax="true" autocomplete="false" update="@(.message)">
+            <f:facet name="prepend">
+              <b:iconAwesome name="key" />
+            </f:facet>
+          </b:inputSecret>
+        </b:column>
+        <b:column col-md="8" offset="2" styleClass="message">
+          <b:message for="password"/>
+        </b:column>
+      </b:row>
+      
+      <b:row>
+        <b:column col-sm="8" offset="2">
+        <h:outputText value="Please enter your first name." for="username" />
+          <b:inputText placeholder="First Name" id="firstName" value="#{user.firstName}"
+                       ajax="true" autocomplete="false" update="@(.message)">
+            <f:facet name="prepend">
+              <b:icon name="text-height" />
+            </f:facet>
+	      </b:inputText>
+	      <b:column col-md="12" style-class="message">
+          <b:message for="username" />
+        </b:column>
+        </b:column>
+      </b:row>
+      
+      <b:row>
+        <b:column col-sm="8" offset="2">
+        <h:outputText value="Please enter your last name." for="username" />
+          <b:inputText placeholder="Last Name" id="lastName" value="#{user.lastName}"
+                       ajax="true" autocomplete="false" update="@(.message)">
+            <f:facet name="prepend">
+              <b:icon name="text-width" />
+            </f:facet>
+	      </b:inputText>
+	      <b:column col-md="12" style-class="message">
+          <b:message for="username" />
+        </b:column>
+        </b:column>
+      </b:row>
+      
+      <b:row>
+        <b:column col-sm="8" offset="2">
+        <h:outputText value="Please enter your email." for="username" />
+          <b:inputText placeholder="Email Address" id="email" value="#{user.email}"
+                       ajax="true" autocomplete="false" update="@(.message)">
+            <f:facet name="prepend">
+              <b:icon name="envelope" />
+            </f:facet>
+	      </b:inputText>
+	      <b:column col-md="12" style-class="message">
+          <b:message for="username" />
+        </b:column>
+        </b:column>
+      </b:row>
+      
+      <b:row>
+        <b:column col-sm="8" offset="2">
+        <h:outputText value="Please enter your phone number." for="username" />
+          <b:inputText placeholder="Phone Number" id="phoneNumber" value="#{user.phoneNumber}"
+                       ajax="true" autocomplete="false" update="@(.message)">
+            <f:facet name="prepend">
+              <b:icon name="earphone" />
+            </f:facet>
+	      </b:inputText>
+	      <b:column col-md="12" style-class="message">
+          <b:message for="username" />
+        </b:column>
+        </b:column>
+      </b:row>
+      
+      <b:row>
+      <b:column col-md="8" offset="2">
+        <b:column col-md="6">
+          <b:commandButton value="register" onclick="ajax:registrationController.register()" update="@form" look="primary"
+                           style="width:100%" />
+        </b:column>
+        <b:column col-md="6">
+          <b:button value="back to login" outcome="login.xhtml" look="danger" style="width:100%" />
+        </b:column>
+        </b:column>
+      </b:row>
+  			</h:form>
+  		</b:column>
+  	</b:row>
+  	 <!-- END LOGIN FORM -->
+  </b:container>
+    </h:body>
+</html>
