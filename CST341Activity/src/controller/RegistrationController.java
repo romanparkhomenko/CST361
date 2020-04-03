@@ -6,9 +6,8 @@ import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
-import javax.inject.Inject;
 
-import business.UserBusinessInterface;
+import data.UserEntityRepository;
 import model.User;
 
 /**
@@ -22,11 +21,6 @@ import model.User;
 @ManagedBean
 @ViewScoped
 public class RegistrationController {
-	
-	// Inject UserBusinessInterface
-	@Inject
-	private UserBusinessInterface userService;
-	
 	public void register(){
 		
 		//Get the new user values from the register form and create user
@@ -34,7 +28,7 @@ public class RegistrationController {
 		User user = context.getApplication().evaluateExpressionGet(context, "#{user}", User.class);
 		
 		// Add new user to the Users ArrayList
-		userService.addUser(user);
+		UserEntityRepository.saveUserEntity(user);
 		
 		try {
 			context.getExternalContext().redirect("/faces/login.xhtml");
@@ -43,10 +37,4 @@ public class RegistrationController {
 		    FacesContext.getCurrentInstance().addMessage("registrationForm:password", msg);
 		}
 	}
-	
-	 // Get User Service
-    public UserBusinessInterface getService() {
-		return userService;
-	}
-
 }

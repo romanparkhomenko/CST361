@@ -1,18 +1,15 @@
 package model;
 
-import java.security.Principal;
-
-import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.context.FacesContext;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @ManagedBean
 @SessionScoped
 public class User {
-
+	long id;
+	
 	// Declare variables and input validation for User object.
 	@NotNull(message = "Please enter a Username. This is a required field.")
 	@Size(min = 3, max = 15)
@@ -39,8 +36,13 @@ public class User {
 	private String phoneNumber;
 
 	// Constructor
-	public User(String username, String password, String firstName, String lastName, String email, String phoneNumber) {
+	public User() {
+		
+	}
+	
+	public User(long id, String username, String password, String firstName, String lastName, String email, String phoneNumber) {
 		super();
+		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.firstName = firstName;
@@ -49,33 +51,11 @@ public class User {
 		this.phoneNumber = phoneNumber;
 	}
 
-	// Default Generic Constructor
-	public User() {
-
-	}
-
-	@PostConstruct
-	public void init() {
-		// Get the logged in Principle
-		Principal principle = FacesContext.getCurrentInstance().getExternalContext().getUserPrincipal();
-		if (principle == null) {
-			setUsername("roman");
-			setPassword("admin");
-			setFirstName("Roman");
-			setLastName("Parkhomenko");
-			setEmail("roman@acme.com");
-			setPhoneNumber("1234567890");
-		} else {
-			setUsername("gcu");
-			setPassword("Lopes2020!");
-			setFirstName(principle.getName());
-			setLastName("GcuUser");
-			setEmail("gcu@acme.com");
-			setPhoneNumber("1234567890");
-		}
-	}
-
 	// Getters for user data
+	public long getId() {
+		return id;
+	}
+	
 	public String getUsername() {
 		return username;
 	}

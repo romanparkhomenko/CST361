@@ -9,7 +9,8 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 
-import business.UserBusinessInterface;
+import data.UserEntityRepository;
+import entity.UserEntity;
 import model.User;
 
 /**
@@ -22,28 +23,20 @@ import model.User;
 
 @ManagedBean
 @SessionScoped
-public class LoginController {
-	
-	// Inject UserBusinessInterface
-	@Inject
-	private UserBusinessInterface userService;
-	   
+public class LoginController {   
 	// Login function called by Login Form command button.
-	public String login(){
+	public String login() {
 		//Get the creds from the login form
 		FacesContext context = FacesContext.getCurrentInstance();
-		User user = context.getApplication().evaluateExpressionGet(context, "#{user}", User.class);
-		System.out.println(user.getUsername() + " " + user.getPassword());
-		//Call the array list from user service.
-		final List<User> users = userService.getUserList();
+		User sessionUser = context.getApplication().evaluateExpressionGet(context, "#{user}", User.class);
 		
-		//Loop through arraylist to see if login creds match existing user.
-		//If so, redirect to the homepage. 
-		for (int i = 0; i < users.size(); i++) {
-			User u = userService.getUser(i);
-			System.out.println(u.getUsername() + " " + u.getEmail());
-			if( u.getUsername().equals(user.getUsername()) && u.getPassword().equals(user.getPassword())) {
-				FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("user", u);
+		//Call the array list from user service.
+		if (sessionUser != null) {
+			System.out.println(sessionUser.getUsername() + " " + sessionUser.getPassword());
+			final UserEntity user = UserEntityRepository.findUserByUsername(sessionUser.getUsername());
+			
+			if (user.getUsername().equals(sessionUser.getUsername()) && user.getPassword().equals(sessionUser.getPassword())) {
+				FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("user", user);
 				//go to main page if login data is correct
 				return "/app/home.xhtml";
 			}
@@ -65,11 +58,4 @@ public class LoginController {
 			e.printStackTrace();
 		}
     }
-   
-    
-    // Get User Service
-    public UserBusinessInterface getService() {
-		return userService;
-	}
-	    
 }
