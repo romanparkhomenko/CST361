@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:b="http://bootsfaces.net/ui"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Home Page</title>
+        <h:outputStylesheet library="styles" name="main.css" position="last"/>
+    </h:head>
+    <h:body>
+    <ui:include src="/resources/layouts/topNavBar.xhtml" />
+  <b:container styleClass="app-homepage">
+  	
+  	<b:row>
+  		<b:column col-md="12">
+  		<h2>Welcome to ACME Weather, #{loginController.message}</h2>
+  		</b:column>
+  	</b:row>
+  	
+  	<b:row styleClass="data-table-container">
+  		<b:column col-md="12" styleClass="data-table">
+			<h:form>
+				<b:dataTable value="#{data.dataCol}" style="width:100%" page-length="15">
+					<b:dataTableColumn value="#{data.time}" label = "Time" order="asc"/>
+					<b:dataTableColumn value="#{data.temp}" label = "Degrees Fahrenheit"/>
+					<b:dataTableColumn value="#{data.minTemp}" label = "Lows" style="color:blue"/>
+					<b:dataTableColumn value="#{data.maxTemp}" label = "Highs" style="color:red"/>
+					<b:dataTableColumn value="#{data.windSpeed}" label = "Wind Speed"/>
+					<b:dataTableColumn value="#{data.windDirect}" label = "Wind Direction"/>
+					<b:dataTableColumn value="#{data.rainIn}" label = "Rainfall (in.)"/>
+					<b:dataTableColumn value="#{data.humid}" label = "Humidity %"/>
+					<b:dataTableColumn value="#{data.pressure}" label = "Air Pressure (in.)"/>
+				</b:dataTable>
+			</h:form>
+
+		</b:column>
+  	
+  	</b:row>
+  	
+  	<b:row styleClass="logout-row">
+  		<b:column col-md="4">
+  		<h:form>
+  			<b:commandButton value="logout" action="#{loginController.logout()}" look="danger" style="width:100%" />
+        </h:form>
+  		</b:column>
+  	</b:row>
+  </b:container>
+    </h:body>
+</html>

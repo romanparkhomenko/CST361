@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CST361CLCApp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CST361CLCApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CST361CLCApp.war">
+      <element id="artifact" artifact-name="CST361CLCApp:war exploded" />
+    </root>
+  </artifact>
+</component>

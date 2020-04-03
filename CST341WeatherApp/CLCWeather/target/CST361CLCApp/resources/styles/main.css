@@ -1,0 +1,77 @@
+.app-login-form {
+	background: white;
+	padding: 2rem 0 3rem;
+	border-radius: 30px;
+	margin-top: 4rem;
+}
+
+.app-login-form .app-logo, .app-registration-form .app-logo {
+	display: block;
+	margin: 2rem auto 2.5rem;
+	max-width: 250px;
+	width: 100%;
+}
+
+.app-login-form h3, .app-login-form p, .app-login-form label {
+	color: black;
+	text-align: center;
+}
+
+.app-login-form #loginForm {
+	margin: 3rem auto;
+}
+
+.app-registration-form h3, .app-registration-form p {
+	text-align: center;
+}
+
+.app-registration-form #registrationForm {
+	margin: 3rem auto;
+}
+
+.navbar-brand {
+	padding: 10px 15px;
+}
+
+.navbar img {
+	max-width: 100px;
+}
+
+table.product-table { width:100%; margin:20px 0; border-collapse:collapse; border-top:1px solid #ddd; border-left:1px solid #ddd; text-align: center;}
+table.product-table .heading { background:#666; color:#fff; text-transform:uppercase; text-align:center; }
+table.product-table th, table td { border-bottom:1px solid #ddd; border-right:1px solid #ddd; padding: 0.5rem;}
+table.product-table th { font-weight:bold; }
+table.product-table tr:nth-of-type(even) { background:#eee; color: black; }
+table.product-table .hover { background:#ccc; }
+
+#login-return {
+	display: block; 
+	margin: 0 auto; 
+	background: #0099cc;
+ 	color: white; 
+ 	font-size: 1.5rem;
+ 	padding: 1rem;
+ 	max-width: 250px;
+}
+
+.message {
+	color: red;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.data-table-container {
+	background: #f0f0f0;
+	box-shadow: 6px 6px 4px rgba(0,0,0,0.15);
+	padding: 1rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.logout-row, .login-row {
+	margin-top: 2rem;
+}
+
+.login-title {
+	margin: 2.5rem auto;
+}

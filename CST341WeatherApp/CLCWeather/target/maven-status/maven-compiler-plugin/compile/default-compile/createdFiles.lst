@@ -1,0 +1,9 @@
+com/nilfactor/activity3/model/User.class
+com/nilfactor/activity3/logic/LoginService.class
+entity/UserEntity.class
+com/nilfactor/activity3/controller/LoginController.class
+data/UserEntityRepository.class
+com/nilfactor/activity3/controller/RegisterController.class
+com/nilfactor/activity3/model/WeatherData.class
+data/HibernateUtil.class
+com/nilfactor/activity3/filter/LoginFilter.class

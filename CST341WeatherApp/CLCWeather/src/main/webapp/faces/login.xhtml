@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+<h:head>
+    <title>Login Page</title>
+    <h:outputStylesheet library="styles" name="main.css" position="last"/>
+</h:head>
+<h:body>
+    <ui:include src="/resources/layouts/topNavBar.xhtml" />
+    <b:container class="content">
+
+        <!-- BEGIN REGULAR LOGIN FORM -->
+        <b:row>
+            <b:column col-md="4" offset="4" styleClass="app-login-form">
+                <b:row>
+                    <b:column col-md="10" offset="1">
+                        <b:image library="images" name="acme-logo-black.svg" styleClass="app-logo"/>
+                        <h3 class="login-title">Acme Weather | Login</h3>
+                    </b:column>
+                </b:row>
+
+                <h:form>
+                    <b:row>
+                        <b:column col-sm="10" offset="1">
+                            <!-- <h:outputText value="Please enter your username." for="username" /> -->
+                            <b:inputText placeholder="Username" fieldId="username" id="username" value="#{loginController.username}"
+                                         autocomplete="false" >
+                                <f:facet name="prepend">
+                                    <b:icon name="user" />
+                                </f:facet>
+                            </b:inputText>
+                            <b:column col-md="12" styleClass="message">
+                                <b:message for="username" />
+                            </b:column>
+                        </b:column>
+                    </b:row>
+
+                    <b:row>
+                        <b:column col-md="10" offset="1">
+                            <!-- <h:outputText value="Please enter your password." /> -->
+                            <b:inputSecret placeholder="Password" fieldId="password" id="password" value="#{loginController.password}"
+                                           autocomplete="false">
+                                <f:facet name="prepend">
+                                    <b:iconAwesome name="key" />
+                                </f:facet>
+                            </b:inputSecret>
+                            <c:if test="#{not empty loginController.message}">
+                                <b:column col-md="12" styleClass="message">
+                                    <div>#{loginController.message}</div>
+                                </b:column>
+                            </c:if>
+                        </b:column>
+                    </b:row>
+
+                    <b:row styleClass="login-row">
+                        <b:column col-md="12">
+                            <b:column col-md="6">
+                                <h:commandButton action="#{loginController.validateLogin}" value="login" type="submit" look="primary" styleClass="btn btn-primary" style="width:100%" />
+                            </b:column>
+                            <b:column col-md="6">
+                                <h:button value="register" outcome="register.xhtml" styleClass="btn btn-danger" look="danger" style="width:100%" />
+                            </b:column>
+                        </b:column>
+                    </b:row>
+                </h:form>
+            </b:column>
+        </b:row>
+        <!-- END REGULAR LOGIN FORM -->
+
+    </b:container>
+</h:body>
+</html>
