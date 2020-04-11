@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="entity.WeatherDataEntity" table="weather" schema="public">
+       	<id name="id" type="long" column="id">
+			<generator class="increment"/>
+	   	</id> 
+       	<property name="time"       type="string"  column="times" />
+    	<property name="temp"       type="integer" column="temp" />
+    	<property name="minTemp"    type="integer" column="min_temp" />
+    	<property name="maxTemp"    type="integer" column="max_temp" />
+    	<property name="windSpeed"  type="integer" column="wind_speed" />
+    	<property name="windDirect" type="string"  column="wind_direct" />
+    	<property name="rainIn"     type="double"  column="rain" />
+    	<property name="humid"      type="integer" column="humid" />
+    	<property name="pressure"   type="double"  column="pressure" />
+    </class>
+</hibernate-mapping>
