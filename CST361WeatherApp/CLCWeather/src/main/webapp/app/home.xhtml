@@ -23,7 +23,7 @@
   	<b:row styleClass="data-table-container">
   		<b:column col-md="12" styleClass="data-table">
 			<h:form>
-				<b:dataTable value="#{data.dataCol}" style="width:100%" page-length="15">
+				<b:dataTable styleClass="dataTable" value="#{loginController.allWeatherData}" var="data" style="width:100%" page-length="15">
 					<b:dataTableColumn value="#{data.time}" label = "Time" order="asc"/>
 					<b:dataTableColumn value="#{data.temp}" label = "Degrees Fahrenheit"/>
 					<b:dataTableColumn value="#{data.minTemp}" label = "Lows" style="color:blue"/>
@@ -39,6 +39,12 @@
 		</b:column>
   	
   	</b:row>
+
+	  <b:row styleClass="chart-row">
+		  <b:column col-md="12">
+			  <canvas id="myChart"></canvas>
+		  </b:column>
+	  </b:row>
   	
   	<b:row styleClass="logout-row">
   		<b:column col-md="4">
@@ -48,5 +54,88 @@
   		</b:column>
   	</b:row>
   </b:container>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<script type="application/javascript">
+			const labels = [];
+			const temp = [];
+			const minTemps = [];
+			const maxTemps = [];
+			const windSpeed = [];
+			const rainFall = [];
+			const humidity = [];
+			const airPressure = [];
+
+			fetch('http://localhost:8080/rest/weather', {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+					'Authorization': 'Basic cm9tYW46cGFzc3dvcmQ=',
+				}
+			}).then(res => res.json())
+			  .then(weatherData => {
+				  weatherData.map(weatherObject => {
+					  labels.push(weatherObject.time);
+					  temp.push(weatherObject.temp);
+					  minTemps.push(weatherObject.minTemp);
+					  maxTemps.push(weatherObject.maxTemp);
+					  windSpeed.push(weatherObject.windSpeed);
+					  rainFall.push(weatherObject.rainIn);
+					  humidity.push(weatherObject.humid);
+					  airPressure.push(weatherObject.pressure);
+				  });
+
+				  var ctx = document.getElementById('myChart').getContext('2d');
+				  var myChart = new Chart(ctx, {
+					  type: 'line',
+					  data: {
+						  labels: labels,
+						  datasets: [{
+							  data: temp,
+							  label: "Temperature",
+							  borderColor: "#3e95cd",
+							  fill: false
+						  }, {
+							  data: minTemps,
+							  label: "MinTemps",
+							  borderColor: "#8e5ea2",
+							  fill: false
+						  }, {
+							  data: maxTemps,
+							  label: "MaxTemps",
+							  borderColor: "#3cba9f",
+							  fill: false
+						  }, {
+							  data: windSpeed,
+							  label: "Wind Speed",
+							  borderColor: "#e8c3b9",
+							  fill: false
+						  }, {
+							  data: rainFall,
+							  label: "Rain Fall",
+							  borderColor: "#c45850",
+							  fill: false
+						  },
+							  {
+								  data: humidity,
+								  label: "Humidity",
+								  borderColor: "#0099cc",
+								  fill: false
+							  },
+							  {
+								  data: airPressure,
+								  label: "Pressure",
+								  borderColor: "#ff6600",
+								  fill: false
+							  }]
+					  },
+					  options: {
+						  title: {
+							  display: true,
+							  text: 'Weather Data'
+						  }
+					  }
+				  });
+			  });
+		</script>
     </h:body>
 </html>

@@ -2,7 +2,7 @@ package com.nilfactor.activity3.model;
 
 import java.io.IOException;
 import java.io.Serializable;
-import javax.annotation.ManagedBean;
+import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,24 +21,29 @@ public class WeatherData {
 	private int humid; //humidity percentage at hour
 	private double pressure; //pressure at hour
 	
-	private static final ArrayList<WeatherData> dataCol = new ArrayList<WeatherData>(Arrays.asList(
-			new WeatherData("09:00 PM",  49, 45, 50,  8,"SSE",  0.00,  79,  30.05),
-			new WeatherData("10:00 PM",  48, 45, 50,  8,"SSE",  0.00,  79,  30.05),
-			new WeatherData("11:00 PM",  48, 45, 50,  7,"SSE",  0.00,  80,  30.04),
-			new WeatherData("12:00 AM",  48, 45, 50,  7,"SSE",  0.01,  83,  30.04),
-			new WeatherData("01:00 AM",  47, 45, 50,  6,"SSE",  0.01,  84,  30.05),
-			new WeatherData("02:00 AM",  46, 45, 50,  6,"SSE",  0.02,  87,  30.06),
-			new WeatherData("03:00 AM",  45, 45, 50,  5,"-S-",  0.04,  87,  30.06),
-			new WeatherData("04:00 AM",  44, 44, 50,  6,"SSW",  0.06,  85,  30.07),
-			new WeatherData("05:00 AM",  45, 45, 50,  7,"SSw",  0.08,  84,  30.07),
-			new WeatherData("06:00 AM",  46, 45, 50,  7,"-W-",  0.04,  86,  30.06),
-			new WeatherData("07:00 AM",  46, 45, 50,  7,"-W-",  0.02,  87,  30.05),
-			new WeatherData("08:00 AM",  47, 45, 50,  8,"-NW",  0.01,  87,  30.04),
-			new WeatherData("09:00 AM",  48, 45, 50,  9,"NNW",  0.01,  84,  30.05),
-			new WeatherData("10:00 AM",  51, 45, 51,  9,"NNW",  0.00,  80,  30.05)
-			));
-	
-	public ArrayList<WeatherData> getData(){return dataCol;}
+	public ArrayList<WeatherData> dataCol = new ArrayList<WeatherData>();
+
+	public ArrayList<WeatherData> getData(){
+
+		if (dataCol.size() == 0) {
+			this.dataCol.add(new WeatherData("09:00 PM",  49, 45, 50,  8,"SSE",  0.00,  79,  30.05));
+			this.dataCol.add(new WeatherData("10:00 PM",  48, 45, 50,  8,"SSE",  0.00,  79,  30.05));
+			this.dataCol.add(new WeatherData("11:00 PM",  48, 45, 50,  7,"SSE",  0.00,  80,  30.04));
+			this.dataCol.add(new WeatherData("12:00 AM",  48, 45, 50,  7,"SSE",  0.01,  83,  30.04));
+			this.dataCol.add(new WeatherData("01:00 AM",  47, 45, 50,  6,"SSE",  0.01,  84,  30.05));
+			this.dataCol.add(new WeatherData("02:00 AM",  46, 45, 50,  6,"SSE",  0.02,  87,  30.06));
+			this.dataCol.add(new WeatherData("03:00 AM",  45, 45, 50,  5,"-S-",  0.04,  87,  30.06));
+			this.dataCol.add(new WeatherData("04:00 AM",  44, 44, 50,  6,"SSW",  0.06,  85,  30.07));
+			this.dataCol.add(new WeatherData("05:00 AM",  45, 45, 50,  7,"SSw",  0.08,  84,  30.07));
+			this.dataCol.add(new WeatherData("06:00 AM",  46, 45, 50,  7,"-W-",  0.04,  86,  30.06));
+			this.dataCol.add(new WeatherData("07:00 AM",  46, 45, 50,  7,"-W-",  0.02,  87,  30.05));
+			this.dataCol.add(new WeatherData("08:00 AM",  47, 45, 50,  8,"-NW",  0.01,  87,  30.04));
+			this.dataCol.add(new WeatherData("09:00 AM",  48, 45, 50,  9,"NNW",  0.01,  84,  30.05));
+			this.dataCol.add(new WeatherData("10:00 AM",  51, 45, 51,  9,"NNW",  0.00,  80,  30.05));
+		}
+
+		return this.dataCol;
+	}
 	
 	public WeatherData() {}
 	

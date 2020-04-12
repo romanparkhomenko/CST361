@@ -6,7 +6,36 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bff4c58-bee2-4c63-930b-88857e9d7d5e" name="Default Changelist" comment="" />
+    <list default="true" id="1bff4c58-bee2-4c63-930b-88857e9d7d5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rest/CORSFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CST361CLCApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CST361CLCApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/rest/WeatherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/HibernateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +95,18 @@
     </expand>
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1a2bhl06SyK1dX2U8GaU9tpzsCh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -74,9 +114,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -486,6 +527,7 @@
       <workItem from="1585936768423" duration="565000" />
       <workItem from="1585937355401" duration="6219000" />
       <workItem from="1585946381015" duration="6937000" />
+      <workItem from="1586711085908" duration="10552000" />
     </task>
     <servers />
   </component>
@@ -517,18 +559,18 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="455" y="126" key="#Web_Browsers/0.23.1440.819@0.23.1440.819" timestamp="1585938494621" />
-    <state x="320" y="80" width="1071" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585946440149">
+    <state x="320" y="80" width="1071" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586714679733">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="320" y="80" width="1071" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.819@0.23.1440.819" timestamp="1585946440149" />
+    <state x="320" y="80" width="1071" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.819@0.23.1440.819" timestamp="1586714679733" />
     <state x="334" y="128" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585949037522">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="334" y="128" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.819@0.23.1440.819" timestamp="1585949037522" />
-    <state x="455" y="126" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1585938709741">
+    <state x="455" y="126" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1586714670938">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="455" y="126" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1440.819@0.23.1440.819" timestamp="1585938709741" />
+    <state x="455" y="126" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1440.819@0.23.1440.819" timestamp="1586714670938" />
     <state x="423" y="49" key="#local" timestamp="1585939242769">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
@@ -537,22 +579,22 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="477" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.819@0.23.1440.819" timestamp="1585941691433" />
-    <state width="1177" height="210" key="GridCell.Tab.0.bottom" timestamp="1585954917264">
+    <state width="1177" height="249" key="GridCell.Tab.0.bottom" timestamp="1586721622033">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1585954917264" />
-    <state width="1177" height="210" key="GridCell.Tab.0.center" timestamp="1585954917263">
+    <state width="1177" height="249" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1586721622033" />
+    <state width="1177" height="249" key="GridCell.Tab.0.center" timestamp="1586721622032">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1585954917263" />
-    <state width="1177" height="210" key="GridCell.Tab.0.left" timestamp="1585954917262">
+    <state width="1177" height="249" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1586721622032" />
+    <state width="1177" height="249" key="GridCell.Tab.0.left" timestamp="1586721622031">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1585954917262" />
-    <state width="1177" height="210" key="GridCell.Tab.0.right" timestamp="1585954917263">
+    <state width="1177" height="249" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1586721622031" />
+    <state width="1177" height="249" key="GridCell.Tab.0.right" timestamp="1586721622032">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="210" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1585954917263" />
+    <state width="1177" height="249" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1586721622032" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1585937411048">
       <screen x="0" y="23" width="1440" height="819" />
     </state>

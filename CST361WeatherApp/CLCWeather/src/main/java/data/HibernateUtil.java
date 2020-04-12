@@ -16,6 +16,7 @@ public class HibernateUtil {
 			{
 				Configuration configuration = new Configuration().configure();
 				configuration.addResource("UserEntity.hbm.xml");
+				configuration.addResource("WeatherDataEntity.hbm.xml");
 				StandardServiceRegistryBuilder serviceRegistryBuilder = new StandardServiceRegistryBuilder();
 				serviceRegistryBuilder.applySettings(configuration.getProperties());
 				ServiceRegistry serviceRegistry = serviceRegistryBuilder.build();

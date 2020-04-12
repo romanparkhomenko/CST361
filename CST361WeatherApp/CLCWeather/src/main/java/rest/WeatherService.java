@@ -17,11 +17,12 @@ import data.UserEntityRepository;
 import data.WeatherDataRepository;
 import entity.UserEntity;
 import entity.WeatherDataEntity;
+import jdk.nashorn.internal.parser.JSONParser;
 
 @RequestScoped
 @Path("/weather")
 @Produces(MediaType.APPLICATION_JSON)
-@Consumes(MediaType.APPLICATION_JSON)
+@Consumes({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
 public class WeatherService {
 	/*
 	 * This is for those who need to create the base64 encoded header value for Authorization
@@ -68,7 +69,7 @@ public class WeatherService {
     @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
 	public Response getAll(@HeaderParam("authorization") String authString) {
-		if (this.isUserAuthenticated(authString) == false) {
+		if (!this.isUserAuthenticated(authString)) {
 			return Response.status(Response.Status.UNAUTHORIZED)
 		        .entity("{\"error\":\"User not authenticated\"}")
 		        .build();
@@ -83,7 +84,7 @@ public class WeatherService {
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
 	public Response getById(@HeaderParam("authorization") String authString, @PathParam("id") long id) {
-		if (this.isUserAuthenticated(authString) == false) {
+		if (!this.isUserAuthenticated(authString)) {
 			return Response.status(Response.Status.UNAUTHORIZED)
 		        .entity("{\"error\":\"User not authenticated\"}")
 		        .build();
@@ -105,12 +106,12 @@ public class WeatherService {
 	@Path("/")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getById(@HeaderParam("authorization") String authString, WeatherDataEntity wde) {
-		if (this.isUserAuthenticated(authString) == false) {
+		if (!this.isUserAuthenticated(authString)) {
 			return Response.status(Response.Status.UNAUTHORIZED)
 		        .entity("{\"error\":\"User not authenticated\"}")
 		        .build();
 		}
-		
+
 		WeatherDataRepository.save(wde);
 		return Response.status(Response.Status.OK)
 		        .entity(wde)
@@ -121,7 +122,7 @@ public class WeatherService {
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response deleteById(@HeaderParam("authorization") String authString, @PathParam("id") long id) {
-		if (this.isUserAuthenticated(authString) == false) {
+		if (!this.isUserAuthenticated(authString)) {
 			return Response.status(Response.Status.UNAUTHORIZED)
 		        .entity("{\"error\":\"User not authenticated\"}")
 		        .build();

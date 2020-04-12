@@ -1,9 +1,13 @@
 com/nilfactor/activity3/model/User.class
+rest/WeatherService.class
 com/nilfactor/activity3/logic/LoginService.class
 entity/UserEntity.class
-com/nilfactor/activity3/controller/LoginController.class
+entity/WeatherDataEntity.class
 data/UserEntityRepository.class
 com/nilfactor/activity3/controller/RegisterController.class
 com/nilfactor/activity3/model/WeatherData.class
-data/HibernateUtil.class
 com/nilfactor/activity3/filter/LoginFilter.class
+com/nilfactor/activity3/controller/LoginController.class
+rest/CORSFilter.class
+data/WeatherDataRepository.class
+data/HibernateUtil.class

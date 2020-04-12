@@ -1,6 +1,7 @@
 package com.nilfactor.activity3.controller;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -11,6 +12,8 @@ import javax.servlet.http.HttpSession;
 
 import com.nilfactor.activity3.logic.LoginService;
 import com.nilfactor.activity3.model.User;
+import data.WeatherDataRepository;
+import entity.WeatherDataEntity;
 
 @ManagedBean
 @SessionScoped
@@ -21,7 +24,7 @@ public class LoginController implements Serializable {
 	private String username;
 	private String password;
 	private String message;
-	
+
 	// to be used later
 	private User user;
 	
@@ -112,5 +115,9 @@ public class LoginController implements Serializable {
 		HttpSession session = req.getSession(false);
 		session.invalidate();
 		res.sendRedirect(req.getContextPath() + "/faces/login.xhtml");
+	}
+
+	public List<WeatherDataEntity> getAllWeatherData() {
+		return WeatherDataRepository.getAll();
 	}
 }

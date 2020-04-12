@@ -68,6 +68,21 @@ table.product-table .hover { background:#ccc; }
 	margin-bottom: 2.5rem;
 }
 
+.data-table-container tr.even {
+	background: #484949;
+}
+
+.data-table-container tr.even:hover {
+	background: #49515a;
+}
+
+.chart-row {
+	background: #f0f0f0;
+	box-shadow: 6px 6px 4px rgba(0,0,0,0.15);
+	padding: 1rem;
+	margin-bottom: 2.5rem;
+}
+
 .logout-row, .login-row {
 	margin-top: 2rem;
 }
