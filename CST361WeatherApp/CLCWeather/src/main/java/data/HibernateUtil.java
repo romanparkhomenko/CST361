@@ -1,14 +1,20 @@
 package data;
 
+import javax.interceptor.Interceptors;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+import com.nilfactor.activity3.utility.LogInterceptor;
+import com.nilfactor.activity3.utility.ServiceService;
 
+@Interceptors(LogInterceptor.class) 
 public class HibernateUtil {
 	private static final SessionFactory sessionFactory = buildSessionFactory();
 
+	@Interceptors(LogInterceptor.class)
     private static SessionFactory buildSessionFactory() {
 		try
 		{
@@ -25,16 +31,19 @@ public class HibernateUtil {
 			return sessionFactory;
 		} catch (Throwable ex)
 		{
-			System.err.println("Initial SessionFactory creation failed." + ex);
+			ServiceService.getLogger("HibernateUtil").error(ex.getMessage());
+			ServiceService.getLogger("HibernateUtil").error(ex.getStackTrace());
 			throw new ExceptionInInitializerError(ex);
 		}
     }
 
-    public static SessionFactory getSessionFactory() {
+	@Interceptors(LogInterceptor.class)
+    public SessionFactory getSessionFactory() {
         return sessionFactory;
     }
     
-    public static void shutdown() {
+	@Interceptors(LogInterceptor.class)
+    public void shutdown() {
     	// Close caches and connection pools
     	getSessionFactory().close();
     }

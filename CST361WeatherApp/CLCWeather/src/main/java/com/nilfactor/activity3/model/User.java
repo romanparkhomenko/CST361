@@ -1,5 +1,7 @@
 package com.nilfactor.activity3.model;
 
+import com.nilfactor.activity3.utility.ServiceService;
+
 import data.UserEntityRepository;
 import entity.UserEntity;
 
@@ -27,8 +29,8 @@ public class User {
 	}
 	
 	public static User getUser(String username) {
-		UserEntityRepository ur = new UserEntityRepository();
-		UserEntity ue = UserEntityRepository.findUserByUsername(username);
+		UserEntityRepository ur = ServiceService.getUserEntityRepository();
+		UserEntity ue = ur.findUserByUsername(username);
 		
 		return new User(ue.getId(), ue.getFirstName(), ue.getLastName(), ue.getEmail(), ue.getUsername(), ue.getPassword(), ue.getPhoneNumber());
 	}

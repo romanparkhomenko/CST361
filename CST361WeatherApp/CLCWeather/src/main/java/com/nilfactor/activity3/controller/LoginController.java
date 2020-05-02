@@ -12,7 +12,8 @@ import javax.servlet.http.HttpSession;
 
 import com.nilfactor.activity3.logic.LoginService;
 import com.nilfactor.activity3.model.User;
-import data.WeatherDataRepository;
+import com.nilfactor.activity3.utility.ServiceService;
+
 import entity.WeatherDataEntity;
 
 @ManagedBean
@@ -118,6 +119,6 @@ public class LoginController implements Serializable {
 	}
 
 	public List<WeatherDataEntity> getAllWeatherData() {
-		return WeatherDataRepository.getAll();
+		return ServiceService.getWeatherDataRepository().getAll();
 	}
 }

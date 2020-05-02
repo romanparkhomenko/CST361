@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import com.nilfactor.activity3.logic.LoginService;
 import com.nilfactor.activity3.model.User;
+import com.nilfactor.activity3.utility.ServiceService;
 
 import data.UserEntityRepository;
 import entity.UserEntity;
@@ -112,7 +113,7 @@ public class RegisterController implements Serializable {
 			ue.setEmail(email);
 			ue.setPhoneNumber(phoneNumber);
 			
-			UserEntityRepository.saveUserEntity(ue);
+			ServiceService.getUserEntityRepository().saveUserEntity(ue);
 			
 			HttpServletRequest req = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
 			HttpServletResponse res = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
