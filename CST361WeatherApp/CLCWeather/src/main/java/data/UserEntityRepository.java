@@ -3,17 +3,26 @@ package data;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.interceptor.Interceptors;
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import com.nilfactor.activity3.utility.LogInterceptor;
+import com.nilfactor.activity3.utility.ServiceService;
+
 import entity.UserEntity;
 
+@Interceptors(LogInterceptor.class)
 public class UserEntityRepository {
-	 public static void saveUserEntity(UserEntity ue) {
+	private HibernateUtil hibernateUtil = ServiceService.getHibernateUtil(); 
+	
+	@Interceptors(LogInterceptor.class)
+	public void saveUserEntity(UserEntity ue) {
 		 Transaction transaction = null;
 	     try {
-	       	Session session = HibernateUtil.getSessionFactory().openSession();
+	       	Session session = hibernateUtil.getSessionFactory().openSession();
 	        			
 	        // start a transaction
 	        transaction = session.beginTransaction();
@@ -25,17 +34,19 @@ public class UserEntityRepository {
 	    	 if (transaction != null) {
 	    		 transaction.rollback();
 	         }
-	         e.printStackTrace();
+	    	 ServiceService.getLogger("UserEntityRepository").error(e.getMessage());
+	    	 ServiceService.getLogger("UserEntityRepository").error(e.getStackTrace());
 	     }
 	 }
 
 
 	 @SuppressWarnings("unchecked")
-	 public static UserEntity findUserByUsername(String username) {
+	 @Interceptors(LogInterceptor.class)
+	 public UserEntity findUserByUsername(String username) {
 		 Transaction transaction = null;
 		 try {
 			// start a transaction
-			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			Session session = hibernateUtil.getSessionFactory().getCurrentSession();
 			transaction = session.beginTransaction();
 			
 			String hql = "select u from entity.UserEntity u where username = :username";
@@ -54,16 +65,18 @@ public class UserEntityRepository {
 	    	 if (transaction != null) {
 	    		 transaction.rollback();
 	         }
-	         e.printStackTrace();
+	    	 ServiceService.getLogger("UserEntityRepository").error(e.getMessage());
+	    	 ServiceService.getLogger("UserEntityRepository").error(e.getStackTrace());
 	     }
 		 return new UserEntity();
 	 }
 	 
 	 @SuppressWarnings("unchecked")
-	 public static List<UserEntity> findAllOrderedById() {
+	 @Interceptors(LogInterceptor.class)
+	 public List<UserEntity> findAllOrderedById() {
 		 Transaction transaction = null;
 		 try {
-			 Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			 Session session = hibernateUtil.getSessionFactory().getCurrentSession();
 			 transaction = session.beginTransaction();
 			 Query q = session.createQuery("select u from entity.UserEntity u");
 			 List<UserEntity> users = q.list();
@@ -74,7 +87,8 @@ public class UserEntityRepository {
 			 if (transaction != null) {
 	    		 transaction.rollback();
 	         }
-	         e.printStackTrace();
+			 ServiceService.getLogger("UserEntityRepository").error(e.getMessage());
+			 ServiceService.getLogger("UserEntityRepository").error(e.getStackTrace());
 	     }
 		 
 		 return new ArrayList<UserEntity>();

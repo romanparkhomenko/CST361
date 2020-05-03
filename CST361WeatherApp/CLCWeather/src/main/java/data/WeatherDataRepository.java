@@ -2,17 +2,26 @@ package data;
 
 import java.util.List;
 
+import javax.interceptor.Interceptors;
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import com.nilfactor.activity3.utility.LogInterceptor;
+import com.nilfactor.activity3.utility.ServiceService;
+
 import entity.WeatherDataEntity;
 
+@Interceptors(LogInterceptor.class)
 public class WeatherDataRepository {
-	public static void save(WeatherDataEntity wde) {
+	private HibernateUtil hibernateUtil = ServiceService.getHibernateUtil(); 
+			
+	@Interceptors(LogInterceptor.class)
+	public void save(WeatherDataEntity wde) {
 		 Transaction transaction = null;
 	     try {
-	       	Session session = HibernateUtil.getSessionFactory().openSession();
+	       	Session session = hibernateUtil.getSessionFactory().openSession();
 	        			
 	        // start a transaction
 	        transaction = session.beginTransaction();
@@ -24,15 +33,17 @@ public class WeatherDataRepository {
 	    	 if (transaction != null) {
 	    		 transaction.rollback();
 	         }
-	         e.printStackTrace();
+	    	 ServiceService.getLogger("WeatherDataRepository").error(e.getMessage());
+	    	 ServiceService.getLogger("WeatherDataRepository").error(e.getStackTrace());
 	     }
 	 }
 	
 	@SuppressWarnings("unchecked")
-	public static List<WeatherDataEntity> getAll() {
+	@Interceptors(LogInterceptor.class)
+	public List<WeatherDataEntity> getAll() {
 		 Transaction transaction = null;
 		 try {
-			 Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			 Session session = hibernateUtil.getSessionFactory().getCurrentSession();
 			 transaction = session.beginTransaction();
 			 Query q = session.createQuery("select wde from entity.WeatherDataEntity wde");
 			 List<WeatherDataEntity> results = q.list();
@@ -43,17 +54,19 @@ public class WeatherDataRepository {
 			 if (transaction != null) {
 	    		 transaction.rollback();
 	         }
-	         e.printStackTrace();
+			 ServiceService.getLogger("WeatherDataRepository").error(e.getMessage());
+			 ServiceService.getLogger("WeatherDataRepository").error(e.getStackTrace());
 	     }
 		 
 		 return null;
 	}
 	
 	@SuppressWarnings("unchecked")
-	public static WeatherDataEntity getById(long id) {
+	@Interceptors(LogInterceptor.class)
+	public WeatherDataEntity getById(long id) {
 		 Transaction transaction = null;
 		 try {
-			 Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			 Session session = hibernateUtil.getSessionFactory().getCurrentSession();
 			 transaction = session.beginTransaction();
 			 List<WeatherDataEntity> results = session.createQuery("select wde from entity.WeatherDataEntity wde where id = :id")
 			 	.setParameter("id",  id)
@@ -67,29 +80,32 @@ public class WeatherDataRepository {
 			 if (transaction != null) {
 	    		 transaction.rollback();
 	         }
-	         e.printStackTrace();
+			 ServiceService.getLogger("WeatherDataRepository").error(e.getMessage());
+			 ServiceService.getLogger("WeatherDataRepository").error(e.getStackTrace());
 	     }
 		 
 		 return null;
 	}
 	
-	public static void deleteById(long id) {
+	@Interceptors(LogInterceptor.class)
+	public void deleteById(long id) {
 		 Transaction transaction = null;
 		 try {
-			 WeatherDataEntity wde = getById(id);
+			 WeatherDataEntity wde = this.getById(id);
 			 if (wde != null) {
-				 Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+				 Session session = hibernateUtil.getSessionFactory().getCurrentSession();
 				 transaction = session.beginTransaction();
 				 session.delete(wde);
 				 transaction.commit();
 			 } else {
-				 System.out.println("Debug: WeatherDataEntity was null cannot delete");
+				 ServiceService.getLogger("WeatherDataRepository").debug("Debug: WeatherDataEntity was null cannot delete");
 			 }
 		 } catch (Exception e) {
 			 if (transaction != null) {
 	    		 transaction.rollback();
 	         }
-	         e.printStackTrace();
+			 ServiceService.getLogger("WeatherDataRepository").error(e.getMessage());
+			 ServiceService.getLogger("WeatherDataRepository").error(e.getStackTrace());
 	     }
 	}
 }
