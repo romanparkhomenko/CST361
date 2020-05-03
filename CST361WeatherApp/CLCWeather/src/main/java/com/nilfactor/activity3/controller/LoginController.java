@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import com.nilfactor.activity3.logic.LoginService;
 import com.nilfactor.activity3.model.User;
+import com.nilfactor.activity3.model.WeatherData;
 import com.nilfactor.activity3.utility.ServiceService;
 
 import entity.WeatherDataEntity;
@@ -25,6 +26,7 @@ public class LoginController implements Serializable {
 	private String username;
 	private String password;
 	private String message;
+	private String serverMessage;
 
 	// to be used later
 	private User user;
@@ -66,6 +68,30 @@ public class LoginController implements Serializable {
 		HttpSession session = req.getSession(false);
 		if (session != null) {
 			session.setAttribute("login_message", message);
+		}
+	}
+
+	public String getServerMessage() {
+		// Load message from session if it exists
+		if (serverMessage == null) {
+			HttpServletRequest req = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+			HttpSession session = req.getSession(false);
+			if (session != null) {
+				serverMessage = (String) session.getAttribute("server_message");
+			}
+		}
+
+		return serverMessage;
+	}
+
+	public void setServerMessage(String message) {
+		this.serverMessage = message;
+
+		// store message in session
+		HttpServletRequest req = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+		HttpSession session = req.getSession(false);
+		if (session != null) {
+			session.setAttribute("server_message", message);
 		}
 	}
 	
@@ -119,6 +145,12 @@ public class LoginController implements Serializable {
 	}
 
 	public List<WeatherDataEntity> getAllWeatherData() {
-		return ServiceService.getWeatherDataRepository().getAll();
+		List<WeatherDataEntity> weatherData = ServiceService.getWeatherDataRepository().getAll();
+		if (weatherData != null) {
+			return weatherData;
+		} else {
+			setServerMessage("Could not reach server");
+			return null;
+		}
 	}
 }

@@ -35,7 +35,11 @@
 					<b:dataTableColumn value="#{data.pressure}" label = "Air Pressure (in.)"/>
 				</b:dataTable>
 			</h:form>
-
+			<c:if test="#{not empty loginController.serverMessage}">
+				<b:column col-md="12" styleClass="message">
+					<div>#{loginController.serverMessage}</div>
+				</b:column>
+			</c:if>
 		</b:column>
   	
   	</b:row>
