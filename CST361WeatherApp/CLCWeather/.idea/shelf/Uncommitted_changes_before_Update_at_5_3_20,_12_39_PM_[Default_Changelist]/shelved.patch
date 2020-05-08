@@ -1,0 +1,828 @@
+Index: target/CST361CLCApp/WEB-INF/beans.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\"?>\n<beans bean-discovery-mode=\"all\" version=\"2.0\"\n xmlns=\"http://xmlns.jcp.org/xml/ns/javaee\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd\"/>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/CST361CLCApp/WEB-INF/beans.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ target/CST361CLCApp/WEB-INF/beans.xml	(date 1587749936000)
+@@ -1,4 +1,8 @@
+ <?xml version="1.0"?>
+ <beans bean-discovery-mode="all" version="2.0"
+  xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd"/>
++ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd">
++    <interceptors>
++    <class>com.nilfactor.activity3.logic.LoggingInterceptor</class>
++    </interceptors>
++</beans>
+Index: .idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax.servlet.jsp:jsp-api:2.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_jstl_1_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_servlet_jstl_1_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__javax_servlet_jstl_1_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax.servlet:jstl:1.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__net_bootsfaces_bootsfaces_1_4_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__net_bootsfaces_bootsfaces_1_4_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__net_bootsfaces_bootsfaces_1_4_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: net.bootsfaces:bootsfaces:1.4.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/net/bootsfaces/bootsfaces/1.4.2/bootsfaces-1.4.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/net/bootsfaces/bootsfaces/1.4.2/bootsfaces-1.4.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/net/bootsfaces/bootsfaces/1.4.2/bootsfaces-1.4.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_glassfish_web_el_impl_2_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_glassfish_web_el_impl_2_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_glassfish_web_el_impl_2_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.glassfish.web:el-impl:2.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/web/el-impl/2.2/el-impl-2.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/web/el-impl/2.2/el-impl-2.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/web/el-impl/2.2/el-impl-2.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_el_el_api_2_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_el_el_api_2_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__javax_el_el_api_2_2.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax.el:el-api:2.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/el/el-api/2.2/el-api-2.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/el/el-api/2.2/el-api-2.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/el/el-api/2.2/el-api-2.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_javaee_web_api_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_javaee_web_api_7_0.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__javax_javaee_web_api_7_0.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax:javaee-web-api:7.0">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/7.0/javaee-web-api-7.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/7.0/javaee-web-api-7.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__dom4j_dom4j_1_6_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__dom4j_dom4j_1_6_1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__dom4j_dom4j_1_6_1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: dom4j:dom4j:1.6.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__antlr_antlr_2_7_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__antlr_antlr_2_7_7.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__antlr_antlr_2_7_7.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: antlr:antlr:2.7.7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.hibernate:hibernate-validator:5.1.3.Final">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.javassist:javassist:3.18.1-GA">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_omnifaces_omnifaces_2_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_omnifaces_omnifaces_2_7.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_omnifaces_omnifaces_2_7.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.omnifaces:omnifaces:2.7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/omnifaces/omnifaces/2.7/omnifaces-2.7.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/omnifaces/omnifaces/2.7/omnifaces-2.7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/omnifaces/omnifaces/2.7/omnifaces-2.7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: target/CST361CLCApp/META-INF/MANIFEST.MF
+===================================================================
+--- target/CST361CLCApp/META-INF/MANIFEST.MF	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ target/CST361CLCApp/META-INF/MANIFEST.MF	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,5 +0,0 @@
+-Manifest-Version: 1.0
+-Created-By: IntelliJ IDEA
+-Built-By: romanparkhomenko
+-Build-Jdk: 1.8.0_242
+-
+Index: .idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.jboss:jandex:1.1.0.Final">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax.validation:validation-api:1.1.0.Final">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax.servlet:servlet-api:2.5">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_faces_javax_faces_api_2_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__javax_faces_javax_faces_api_2_1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__javax_faces_javax_faces_api_2_1.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax.faces:javax.faces-api:2.1">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/faces/javax.faces-api/2.1/javax.faces-api-2.1.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/faces/javax.faces-api/2.1/javax.faces-api-2.1-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/javax/faces/javax.faces-api/2.1/javax.faces-api-2.1-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: com.fasterxml:classmate:1.0.0">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.0.0/classmate-1.0.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.0.0/classmate-1.0.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_sun_el_el_ri_1_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_sun_el_el_ri_1_0.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__com_sun_el_el_ri_1_0.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: com.sun.el:el-ri:1.0">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/com/sun/el/el-ri/1.0/el-ri-1.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/com/sun/el/el-ri/1.0/el-ri-1.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/com/sun/el/el-ri/1.0/el-ri-1.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_postgresql_postgresql_42_2_2_jre7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_postgresql_postgresql_42_2_2_jre7.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_postgresql_postgresql_42_2_2_jre7.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.postgresql:postgresql:42.2.2.jre7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.2.jre7/postgresql-42.2.2.jre7.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.2.jre7/postgresql-42.2.2.jre7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.2.jre7/postgresql-42.2.2.jre7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_hibernate_hibernate_core_4_3_7_Final.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_hibernate_hibernate_core_4_3_7_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/libraries/Maven__org_hibernate_hibernate_core_4_3_7_Final.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.hibernate:hibernate-core:4.3.7.Final">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/WeatherDataRepository.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/model/User.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/entity/WeatherDataEntity.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/filter/LoginFilter.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/logic/LoginService.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/entity/UserEntity.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/controller/LoginController.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/model/WeatherData.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/HibernateUtil.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/UserEntityRepository.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/rest/CORSFilter.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/rest/WeatherService.java\n/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/controller/RegisterController.java\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(date 1587749977354)
+@@ -3,8 +3,10 @@
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/entity/WeatherDataEntity.java
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/filter/LoginFilter.java
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/logic/LoginService.java
++/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/logic/LoggingInterceptor.java
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/entity/UserEntity.java
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/controller/LoginController.java
++/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/logic/LoggerService.java
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/model/WeatherData.java
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/HibernateUtil.java
+ /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/UserEntityRepository.java
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>com/nilfactor/activity3/model/User.class\nrest/WeatherService.class\ncom/nilfactor/activity3/logic/LoginService.class\nentity/UserEntity.class\nentity/WeatherDataEntity.class\ndata/UserEntityRepository.class\ncom/nilfactor/activity3/controller/RegisterController.class\ncom/nilfactor/activity3/model/WeatherData.class\ncom/nilfactor/activity3/filter/LoginFilter.class\ncom/nilfactor/activity3/controller/LoginController.class\nrest/CORSFilter.class\ndata/WeatherDataRepository.class\ndata/HibernateUtil.class\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1587749973430)
+@@ -8,6 +8,8 @@
+ com/nilfactor/activity3/model/WeatherData.class
+ com/nilfactor/activity3/filter/LoginFilter.class
+ com/nilfactor/activity3/controller/LoginController.class
++com/nilfactor/activity3/logic/LoggingInterceptor.class
++com/nilfactor/activity3/logic/LoggerService.class
+ rest/CORSFilter.class
+ data/WeatherDataRepository.class
+ data/HibernateUtil.class
+Index: .idea/artifacts/CST361CLCApp_war_exploded.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"ArtifactManager\">\n  <artifact type=\"exploded-war\" name=\"CST361CLCApp:war exploded\">\n    <output-path>$PROJECT_DIR$/target/CST361CLCApp</output-path>\n    <properties id=\"maven-jee-properties\">\n      <options>\n        <exploded>true</exploded>\n        <module>CST361CLCApp</module>\n        <packaging>war</packaging>\n      </options>\n    </properties>\n    <root id=\"root\">\n      <element id=\"directory\" name=\"WEB-INF\">\n        <element id=\"directory\" name=\"classes\">\n          <element id=\"module-output\" name=\"CST361CLCApp\" />\n        </element>\n        <element id=\"directory\" name=\"lib\">\n          <element id=\"library\" level=\"project\" name=\"Maven: net.bootsfaces:bootsfaces:1.4.2\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.omnifaces:omnifaces:2.7\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: javax.servlet:jstl:1.2\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: com.sun.el:el-ri:1.0\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.glassfish.web:el-impl:2.2\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: javax.el:el-api:2.2\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.hibernate:hibernate-core:4.3.7.Final\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.jboss.logging:jboss-logging:3.1.3.GA\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: dom4j:dom4j:1.6.1\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.javassist:javassist:3.18.1-GA\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: antlr:antlr:2.7.7\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.jboss:jandex:1.1.0.Final\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.hibernate:hibernate-validator:5.1.3.Final\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: com.fasterxml:classmate:1.0.0\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: javax.validation:validation-api:1.1.0.Final\" />\n          <element id=\"library\" level=\"project\" name=\"Maven: org.postgresql:postgresql:42.2.2.jre7\" />\n        </element>\n      </element>\n      <element id=\"directory\" name=\"META-INF\">\n        <element id=\"file-copy\" path=\"$PROJECT_DIR$/target/CST361CLCApp/META-INF/MANIFEST.MF\" />\n      </element>\n      <element id=\"javaee-facet-resources\" facet=\"CST361CLCApp/web/Web\" />\n    </root>\n  </artifact>\n</component>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/artifacts/CST361CLCApp_war_exploded.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/artifacts/CST361CLCApp_war_exploded.xml	(date 1587749306028)
+@@ -14,6 +14,8 @@
+           <element id="module-output" name="CST361CLCApp" />
+         </element>
+         <element id="directory" name="lib">
++          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.13.1" />
++          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.13.1" />
+           <element id="library" level="project" name="Maven: net.bootsfaces:bootsfaces:1.4.2" />
+           <element id="library" level="project" name="Maven: org.omnifaces:omnifaces:2.7" />
+           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+Index: CST361CLCApp.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"FacetManager\">\n    <facet type=\"web\" name=\"Web\">\n      <configuration>\n        <descriptors>\n          <deploymentDescriptor name=\"jboss-web.xml\" url=\"file://$MODULE_DIR$/src/main/webapp/WEB-INF/jboss-web.xml\" />\n          <deploymentDescriptor name=\"web.xml\" url=\"file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml\" />\n        </descriptors>\n        <webroots>\n          <root url=\"file://$MODULE_DIR$/src/main/webapp\" relative=\"/\" />\n        </webroots>\n        <sourceRoots>\n          <root url=\"file://$MODULE_DIR$/src/main/java\" />\n          <root url=\"file://$MODULE_DIR$/src/main/resources\" />\n        </sourceRoots>\n      </configuration>\n    </facet>\n    <facet type=\"hibernate\" name=\"Hibernate\">\n      <configuration>\n        <datasource-map>\n          <unit-entry name=\"hibernate.cfg.xml\" value=\"b3d90451-7b8e-4d2f-90c1-e9dd85fc5448\" />\n        </datasource-map>\n        <naming-strategy-map />\n        <deploymentDescriptor name=\"hibernate.cfg.xml\" url=\"file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml\" />\n      </configuration>\n    </facet>\n    <facet type=\"jpa\" name=\"JPA\">\n      <configuration>\n        <setting name=\"validation-enabled\" value=\"true\" />\n        <datasource-mapping>\n          <factory-entry name=\"primary\" />\n        </datasource-mapping>\n        <naming-strategy-map />\n        <deploymentDescriptor name=\"persistence.xml\" url=\"file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml\" />\n      </configuration>\n    </facet>\n    <facet type=\"javaeeApplication\" name=\"javaEEApplication\">\n      <configuration>\n        <descriptors>\n          <deploymentDescriptor name=\"application.xml\" url=\"file://$MODULE_DIR$/META-INF/application.xml\" />\n        </descriptors>\n      </configuration>\n    </facet>\n    <facet type=\"ejb\" name=\"EJB\">\n      <configuration>\n        <ejbRoots>\n          <root url=\"file://$MODULE_DIR$/src/main/java\" />\n        </ejbRoots>\n      </configuration>\n    </facet>\n  </component>\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_1_8\">\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\n    <content url=\"file://$MODULE_DIR$\">\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/test/java\" isTestSource=\"true\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/test/resources\" type=\"java-test-resource\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\n    </content>\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n    <orderEntry type=\"library\" name=\"Java EE 6-Java EE 6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"bootstrap\" level=\"application\" />\n    <orderEntry type=\"library\" name=\"jquery-3.2.1.slim\" level=\"application\" />\n    <orderEntry type=\"library\" name=\"popper\" level=\"application\" />\n    <orderEntry type=\"library\" scope=\"PROVIDED\" name=\"Maven: javax.faces:javax.faces-api:2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: net.bootsfaces:bootsfaces:1.4.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.omnifaces:omnifaces:2.7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.servlet:jstl:1.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"PROVIDED\" name=\"Maven: javax.servlet:servlet-api:2.5\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"PROVIDED\" name=\"Maven: javax.servlet.jsp:jsp-api:2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.sun.el:el-ri:1.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"PROVIDED\" name=\"Maven: javax:javaee-web-api:7.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.glassfish.web:el-impl:2.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.el:el-api:2.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hibernate:hibernate-core:4.3.7.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.jboss.logging:jboss-logging:3.1.3.GA\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: dom4j:dom4j:1.6.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.javassist:javassist:3.18.1-GA\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: antlr:antlr:2.7.7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.jboss:jandex:1.1.0.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hibernate:hibernate-validator:5.1.3.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml:classmate:1.0.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.validation:validation-api:1.1.0.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.postgresql:postgresql:42.2.2.jre7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Chart\" level=\"application\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- CST361CLCApp.iml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ CST361CLCApp.iml	(date 1587749306018)
+@@ -66,7 +66,11 @@
+     <orderEntry type="library" name="bootstrap" level="application" />
+     <orderEntry type="library" name="jquery-3.2.1.slim" level="application" />
+     <orderEntry type="library" name="popper" level="application" />
++    <orderEntry type="library" name="Chart" level="application" />
++    <orderEntry type="library" name="Java EE 6-Java EE 6 (2)" level="project" />
+     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.faces:javax.faces-api:2.1" level="project" />
++    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.13.1" level="project" />
++    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.1" level="project" />
+     <orderEntry type="library" name="Maven: net.bootsfaces:bootsfaces:1.4.2" level="project" />
+     <orderEntry type="library" name="Maven: org.omnifaces:omnifaces:2.7" level="project" />
+     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
+@@ -90,6 +94,5 @@
+     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
+     <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
+     <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.2.jre7" level="project" />
+-    <orderEntry type="library" name="Chart" level="application" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ArtifactsWorkspaceSettings\">\n    <artifacts-to-build>\n      <artifact name=\"CST361CLCApp:war exploded\" />\n    </artifacts-to-build>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"1bff4c58-bee2-4c63-930b-88857e9d7d5e\" name=\"Default Changelist\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/rest/CORSFilter.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/jsLibraryMappings.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/jsLibraryMappings.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/CST361CLCApp.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/CST361CLCApp.iml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/rest/WeatherService.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/data/HibernateUtil.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/data/HibernateUtil.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/rest/WeatherService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/rest/WeatherService.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/webapp/app/home.xhtml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/webapp/app/home.xhtml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/webapp/resources/styles/main.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/webapp/resources/styles/main.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp.war\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp.war\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/data/HibernateUtil.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/data/HibernateUtil.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/hibernate.cfg.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/hibernate.cfg.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/maven-archiver/pom.properties\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/maven-archiver/pom.properties\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DatabaseView\">\n    <option name=\"SHOW_INTERMEDIATE\" value=\"true\" />\n    <option name=\"GROUP_DATA_SOURCES\" value=\"true\" />\n    <option name=\"GROUP_SCHEMA\" value=\"true\" />\n    <option name=\"GROUP_CONTENTS\" value=\"false\" />\n    <option name=\"SORT_POSITIONED\" value=\"false\" />\n    <option name=\"SHOW_EMPTY_GROUPS\" value=\"false\" />\n    <option name=\"AUTO_SCROLL_FROM_SOURCE\" value=\"false\" />\n    <option name=\"HIDDEN_KINDS\">\n      <set />\n    </option>\n    <expand>\n      <path>\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\n        <item name=\"hibernate.cfg.xml/Hibernate\" type=\"feb32156:DbDataSourceImpl\" />\n      </path>\n      <path>\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\n        <item name=\"hibernate.cfg.xml/Hibernate\" type=\"feb32156:DbDataSourceImpl\" />\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n      </path>\n      <path>\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\n        <item name=\"hibernate.cfg.xml/Hibernate\" type=\"feb32156:DbDataSourceImpl\" />\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n        <item name=\"school: database\" type=\"162271b6:PgImplModel$Database\" />\n      </path>\n      <path>\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\n        <item name=\"hibernate.cfg.xml/Hibernate\" type=\"feb32156:DbDataSourceImpl\" />\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n        <item name=\"school: database\" type=\"162271b6:PgImplModel$Database\" />\n        <item name=\"schemas\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n      </path>\n      <path>\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\n        <item name=\"hibernate.cfg.xml/Hibernate\" type=\"feb32156:DbDataSourceImpl\" />\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n        <item name=\"school: database\" type=\"162271b6:PgImplModel$Database\" />\n        <item name=\"schemas\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n        <item name=\"public: schema\" type=\"983ebcf7:PgImplModel$Schema\" />\n      </path>\n      <path>\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\n        <item name=\"hibernate.cfg.xml/Hibernate\" type=\"feb32156:DbDataSourceImpl\" />\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n        <item name=\"school: database\" type=\"162271b6:PgImplModel$Database\" />\n        <item name=\"schemas\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\n        <item name=\"public: schema\" type=\"983ebcf7:PgImplModel$Schema\" />\n        <item name=\"users: table\" type=\"69fad909:PgImplModel$LocalTable\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1a2bhl06SyK1dX2U8GaU9tpzsCh\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showExcludedFiles\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"project.structure.last.edited\" value=\"Project\" />\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\n    <property name=\"run.code.analysis.last.selected.profile\" value=\"pProject Default\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"configurable.group.appearance\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"com.nilfactor.activity3.model\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/java/data\" />\n      <recent name=\"$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller\" />\n      <recent name=\"$PROJECT_DIR$/src/main/webapp/WEB-INF\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"JBoss Server.local\">\n    <configuration default=\"true\" type=\"GlassfishConfiguration\" factoryName=\"Local\" ALTERNATIVE_JRE_ENABLED=\"false\">\n      <deployment />\n      <server-settings>\n        <option name=\"DOMAIN\" value=\"\" />\n        <option name=\"PRESERVE\" value=\"false\" />\n        <option name=\"COMPATIBILITY\" value=\"false\" />\n        <option name=\"VIRTUAL_SERVER\" />\n        <option name=\"USERNAME\" value=\"admin\" />\n      </server-settings>\n      <predefined_log_file enabled=\"true\" id=\"GlassFish\" />\n      <RunnerSettings RunnerId=\"Debug\">\n        <option name=\"DEBUG_PORT\" value=\"9009\" />\n      </RunnerSettings>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"JBoss 10.1.2.Final-redhat-1\" type=\"JBossConfiguration\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"JBoss 10.1.2.Final-redhat-1\" ALTERNATIVE_JRE_ENABLED=\"false\" nameIsGenerated=\"true\">\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\n      <deployment>\n        <artifact name=\"CST361CLCApp:war exploded\">\n          <settings />\n        </artifact>\n      </deployment>\n      <server-settings>\n        <option name=\"SERVER\" />\n        <option name=\"BINDING_SET_NAME\" value=\"\" />\n        <option name=\"DOMAIN\" value=\"false\" />\n        <option name=\"SERVER_GROUP\" value=\"main-server-group\" />\n        <option name=\"USERNAME\" value=\"romanparkhomenko\" />\n        <option name=\"CREDENTIAL_ALIAS\" value=\"af539a99-a156-4136-8558-b7d209655a8a\" />\n      </server-settings>\n      <predefined_log_file enabled=\"true\" id=\"JBoss\" />\n      <RunnerSettings RunnerId=\"Debug\">\n        <option name=\"DEBUG_PORT\" value=\"63310\" />\n      </RunnerSettings>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n        <option name=\"BuildArtifacts\" enabled=\"true\">\n          <artifact name=\"CST361CLCApp:war exploded\" />\n        </option>\n      </method>\n    </configuration>\n    <configuration name=\"JBoss 14.0.11.Final-redhat-00001\" type=\"JBossConfiguration\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"JBoss 14.0.11.Final-redhat-00001\" ALTERNATIVE_JRE_ENABLED=\"false\" nameIsGenerated=\"true\">\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\n      <deployment />\n      <server-settings>\n        <option name=\"SERVER\" />\n        <option name=\"BINDING_SET_NAME\" value=\"\" />\n        <option name=\"DOMAIN\" value=\"false\" />\n        <option name=\"SERVER_GROUP\" value=\"main-server-group\" />\n        <option name=\"USERNAME\" value=\"\" />\n        <option name=\"CREDENTIAL_ALIAS\" />\n      </server-settings>\n      <predefined_log_file enabled=\"true\" id=\"JBoss\" />\n      <RunnerSettings RunnerId=\"Debug\">\n        <option name=\"DEBUG_PORT\" value=\"63310\" />\n      </RunnerSettings>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JBossConfiguration\" factoryName=\"Local\" ALTERNATIVE_JRE_ENABLED=\"false\">\n      <deployment />\n      <server-settings>\n        <option name=\"SERVER\" value=\"\" />\n        <option name=\"BINDING_SET_NAME\" value=\"\" />\n        <option name=\"DOMAIN\" value=\"false\" />\n        <option name=\"SERVER_GROUP\" value=\"\" />\n        <option name=\"USERNAME\" value=\"\" />\n      </server-settings>\n      <predefined_log_file enabled=\"true\" id=\"JBoss\" />\n      <RunnerSettings RunnerId=\"Debug\">\n        <option name=\"DEBUG_PORT\" value=\"63310\" />\n      </RunnerSettings>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JBossConfiguration\" factoryName=\"Remote\" ALTERNATIVE_JRE_ENABLED=\"false\">\n      <option name=\"LOCAL\" value=\"false\" />\n      <deployment />\n      <server-settings>\n        <data>\n          <option name=\"serverGroup\" value=\"\" />\n          <option name=\"transportHostId\" />\n          <server-group />\n        </data>\n      </server-settings>\n      <predefined_log_file enabled=\"true\" id=\"JBoss\" />\n      <RunnerSettings RunnerId=\"Debug\">\n        <option name=\"DEBUG_PORT\" value=\"63352\" />\n        <option name=\"LOCAL\" value=\"false\" />\n      </RunnerSettings>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"local\" type=\"JBossConfiguration\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"JBoss 14.0.11.Final-redhat-000011\" ALTERNATIVE_JRE_ENABLED=\"false\">\n      <option name=\"OPEN_IN_BROWSER_URL\" value=\"http://localhost:8080/\" />\n      <option name=\"SHOW_DIALOG_ON_UPDATE\" value=\"false\" />\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\n      <deployment>\n        <artifact name=\"CST361CLCApp:war exploded\">\n          <settings />\n        </artifact>\n      </deployment>\n      <server-settings>\n        <option name=\"SERVER\" />\n        <option name=\"BINDING_SET_NAME\" value=\"\" />\n        <option name=\"DOMAIN\" value=\"false\" />\n        <option name=\"SERVER_GROUP\" value=\"main-server-group\" />\n        <option name=\"USERNAME\" value=\"\" />\n        <option name=\"CREDENTIAL_ALIAS\" />\n      </server-settings>\n      <predefined_log_file enabled=\"true\" id=\"JBoss\" />\n      <RunnerSettings RunnerId=\"Debug\">\n        <option name=\"DEBUG_PORT\" value=\"63310\" />\n      </RunnerSettings>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <method v=\"2\">\n        <option name=\"BuildArtifacts\" enabled=\"true\">\n          <artifact name=\"CST361CLCApp:war exploded\" />\n        </option>\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"JBoss Server.JBoss 10.1.2.Final-redhat-1\" />\n      <item itemvalue=\"JBoss Server.local\" />\n      <item itemvalue=\"JBoss Server.JBoss 14.0.11.Final-redhat-00001\" />\n    </list>\n  </component>\n  <component name=\"ServiceViewManager\">\n    <option name=\"viewStates\">\n      <list>\n        <serviceView>\n          <option name=\"contentProportion\" value=\"0.1395179\" />\n          <treeState>\n            <expand>\n              <path>\n                <item name=\"services root\" type=\"e789fda9:ObjectUtils$Sentinel\" />\n                <item name=\"JBoss Server\" type=\"7427dc5b:ServiceModel$ServiceGroupNode\" />\n              </path>\n              <path>\n                <item name=\"services root\" type=\"e789fda9:ObjectUtils$Sentinel\" />\n                <item name=\"JBoss Server\" type=\"7427dc5b:ServiceModel$ServiceGroupNode\" />\n                <item name=\"Running\" type=\"7427dc5b:ServiceModel$ServiceGroupNode\" />\n              </path>\n            </expand>\n            <select />\n          </treeState>\n        </serviceView>\n      </list>\n    </option>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"1bff4c58-bee2-4c63-930b-88857e9d7d5e\" name=\"Default Changelist\" comment=\"\" />\n      <created>1585936756944</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1585936756944</updated>\n      <workItem from=\"1585936768423\" duration=\"565000\" />\n      <workItem from=\"1585937355401\" duration=\"6219000\" />\n      <workItem from=\"1585946381015\" duration=\"6937000\" />\n      <workItem from=\"1586711085908\" duration=\"10552000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"507\" y=\"244\" key=\"#BuildArtifactsBeforeRunChooser\" timestamp=\"1585942624182\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"507\" y=\"244\" key=\"#BuildArtifactsBeforeRunChooser/0.23.1440.819@0.23.1440.819\" timestamp=\"1585942624182\" />\n    <state x=\"320\" y=\"98\" key=\"#Deployment\" timestamp=\"1585940617289\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"320\" y=\"98\" key=\"#Deployment/0.23.1440.819@0.23.1440.819\" timestamp=\"1585940617289\" />\n    <state x=\"455\" y=\"126\" key=\"#Glassfish_Server\" timestamp=\"1585937488256\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"455\" y=\"126\" key=\"#Glassfish_Server/0.23.1440.819@0.23.1440.819\" timestamp=\"1585937488256\" />\n    <state x=\"426\" y=\"49\" key=\"#JBoss_10.1.2.Final-redhat-1\" timestamp=\"1585937988645\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"426\" y=\"49\" key=\"#JBoss_10.1.2.Final-redhat-1/0.23.1440.819@0.23.1440.819\" timestamp=\"1585937988645\" />\n    <state x=\"455\" y=\"101\" key=\"#JBoss_Server\" timestamp=\"1585938701127\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"455\" y=\"101\" key=\"#JBoss_Server/0.23.1440.819@0.23.1440.819\" timestamp=\"1585938701127\" />\n    <state x=\"455\" y=\"126\" key=\"#Web_Browsers\" timestamp=\"1585938494621\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"455\" y=\"126\" key=\"#Web_Browsers/0.23.1440.819@0.23.1440.819\" timestamp=\"1585938494621\" />\n    <state x=\"320\" y=\"80\" width=\"1071\" height=\"762\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1586714679733\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"320\" y=\"80\" width=\"1071\" height=\"762\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.819@0.23.1440.819\" timestamp=\"1586714679733\" />\n    <state x=\"334\" y=\"128\" key=\"#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog\" timestamp=\"1585949037522\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"334\" y=\"128\" key=\"#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.819@0.23.1440.819\" timestamp=\"1585949037522\" />\n    <state x=\"455\" y=\"126\" key=\"#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable\" timestamp=\"1586714670938\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"455\" y=\"126\" key=\"#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1440.819@0.23.1440.819\" timestamp=\"1586714670938\" />\n    <state x=\"423\" y=\"49\" key=\"#local\" timestamp=\"1585939242769\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"423\" y=\"49\" key=\"#local/0.23.1440.819@0.23.1440.819\" timestamp=\"1585939242769\" />\n    <state x=\"477\" y=\"301\" key=\"ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1\" timestamp=\"1585941691433\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"477\" y=\"301\" key=\"ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.819@0.23.1440.819\" timestamp=\"1585941691433\" />\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1586721622033\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819\" timestamp=\"1586721622033\" />\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.center\" timestamp=\"1586721622032\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819\" timestamp=\"1586721622032\" />\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.left\" timestamp=\"1586721622031\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819\" timestamp=\"1586721622031\" />\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.right\" timestamp=\"1586721622032\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state width=\"1177\" height=\"249\" key=\"GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819\" timestamp=\"1586721622032\" />\n    <state width=\"239\" height=\"457\" key=\"HiddenNamespacesPopup\" timestamp=\"1585937411048\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state width=\"239\" height=\"457\" key=\"HiddenNamespacesPopup/0.23.1440.819@0.23.1440.819\" timestamp=\"1585937411048\" />\n    <state x=\"258\" y=\"94\" key=\"Maven.ArtifactSearchDialog\" timestamp=\"1585938102117\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"258\" y=\"94\" key=\"Maven.ArtifactSearchDialog/0.23.1440.819@0.23.1440.819\" timestamp=\"1585938102117\" />\n    <state x=\"221\" y=\"23\" width=\"1024\" height=\"819\" key=\"SettingsEditor\" timestamp=\"1585938282932\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"819\" />\n    </state>\n    <state x=\"221\" y=\"23\" width=\"1024\" height=\"819\" key=\"SettingsEditor/0.23.1440.819@0.23.1440.819\" timestamp=\"1585938282932\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ .idea/workspace.xml	(date 1587750709732)
+@@ -7,31 +7,38 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="1bff4c58-bee2-4c63-930b-88857e9d7d5e" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/rest/CORSFilter.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CST361CLCApp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CST361CLCApp_war_exploded.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_el_el_ri_1_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_el_api_2_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_faces_javax_faces_api_2_1.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bootsfaces_bootsfaces_1_4_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_el_impl_2_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_7_Final.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_omnifaces_omnifaces_2_7.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_2_jre7.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/CST361CLCApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CST361CLCApp.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/rest/WeatherService.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/data/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/HibernateUtil.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/WeatherService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home.xhtml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/styles/main.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/CST361CLCApp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp.war" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/META-INF/MANIFEST.MF" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/beans.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/data/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/HibernateUtil.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+@@ -106,10 +113,11 @@
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+   </component>
+   <component name="ProjectId" id="1a2bhl06SyK1dX2U8GaU9tpzsCh" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="1" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showExcludedFiles" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
+@@ -490,29 +498,6 @@
+       <item itemvalue="JBoss Server.local" />
+       <item itemvalue="JBoss Server.JBoss 14.0.11.Final-redhat-00001" />
+     </list>
+-  </component>
+-  <component name="ServiceViewManager">
+-    <option name="viewStates">
+-      <list>
+-        <serviceView>
+-          <option name="contentProportion" value="0.1395179" />
+-          <treeState>
+-            <expand>
+-              <path>
+-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+-                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+-              </path>
+-              <path>
+-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+-                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+-              </path>
+-            </expand>
+-            <select />
+-          </treeState>
+-        </serviceView>
+-      </list>
+-    </option>
+   </component>
+   <component name="SvnConfiguration">
+     <configuration />
+@@ -527,12 +512,14 @@
+       <workItem from="1585936768423" duration="565000" />
+       <workItem from="1585937355401" duration="6219000" />
+       <workItem from="1585946381015" duration="6937000" />
+-      <workItem from="1586711085908" duration="10552000" />
++      <workItem from="1586711085908" duration="12223000" />
++      <workItem from="1587145011825" duration="598000" />
++      <workItem from="1587747449936" duration="3255000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="1" />
++    <option name="version" value="2" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="507" y="244" key="#BuildArtifactsBeforeRunChooser" timestamp="1585942624182">
+@@ -579,30 +566,30 @@
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+     <state x="477" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.819@0.23.1440.819" timestamp="1585941691433" />
+-    <state width="1177" height="249" key="GridCell.Tab.0.bottom" timestamp="1586721622033">
++    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1587750709651">
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+-    <state width="1177" height="249" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1586721622033" />
+-    <state width="1177" height="249" key="GridCell.Tab.0.center" timestamp="1586721622032">
++    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1587750709651" />
++    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1587750709651">
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+-    <state width="1177" height="249" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1586721622032" />
+-    <state width="1177" height="249" key="GridCell.Tab.0.left" timestamp="1586721622031">
++    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1587750709651" />
++    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1587750709651">
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+-    <state width="1177" height="249" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1586721622031" />
+-    <state width="1177" height="249" key="GridCell.Tab.0.right" timestamp="1586721622032">
++    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1587750709651" />
++    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1587750709651">
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+-    <state width="1177" height="249" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1586721622032" />
++    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1587750709651" />
+     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1585937411048">
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+     <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1440.819@0.23.1440.819" timestamp="1585937411048" />
+-    <state x="258" y="94" key="Maven.ArtifactSearchDialog" timestamp="1585938102117">
++    <state x="295" y="90" key="Maven.ArtifactSearchDialog" timestamp="1587749087334">
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+-    <state x="258" y="94" key="Maven.ArtifactSearchDialog/0.23.1440.819@0.23.1440.819" timestamp="1585938102117" />
++    <state x="295" y="90" key="Maven.ArtifactSearchDialog/0.23.1440.819@0.23.1440.819" timestamp="1587749087334" />
+     <state x="221" y="23" width="1024" height="819" key="SettingsEditor" timestamp="1585938282932">
+       <screen x="0" y="23" width="1440" height="819" />
+     </state>
+Index: target/maven-archiver/pom.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Generated by Maven\n#Sun Apr 12 13:54:50 MDT 2020\nversion=0.0.1-SNAPSHOT\ngroupId=com.nilfactory.activity3\nartifactId=CST361CLCApp\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/maven-archiver/pom.properties	(revision 13d117c97f66217629b79dd7b2e9835317720f67)
++++ target/maven-archiver/pom.properties	(date 1587749978017)
+@@ -1,5 +1,5 @@
+ #Generated by Maven
+-#Sun Apr 12 13:54:50 MDT 2020
++#Fri Apr 24 11:39:38 MDT 2020
+ version=0.0.1-SNAPSHOT
+ groupId=com.nilfactory.activity3
+ artifactId=CST361CLCApp

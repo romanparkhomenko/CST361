@@ -88,11 +88,15 @@
 					  airPressure.push(weatherObject.pressure);
 				  });
 
+				  const parsedlabels = labels.map(label => {
+				  	return label.substring(0, 25);
+				  })
+
 				  var ctx = document.getElementById('myChart').getContext('2d');
 				  var myChart = new Chart(ctx, {
 					  type: 'line',
 					  data: {
-						  labels: labels,
+						  labels: parsedlabels,
 						  datasets: [{
 							  data: temp,
 							  label: "Temperature",

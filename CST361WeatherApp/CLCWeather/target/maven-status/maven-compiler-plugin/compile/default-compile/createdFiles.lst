@@ -4,12 +4,16 @@ com/nilfactor/activity3/logic/LoginService.class
 entity/UserEntity.class
 com/nilfactor/activity3/utility/LogInterceptor.class
 entity/WeatherDataEntity.class
+com/nilfactor/activity3/userFactory/RandomPassword.class
 data/UserEntityRepository.class
 com/nilfactor/activity3/controller/RegisterController.class
 com/nilfactor/activity3/model/WeatherData.class
 com/nilfactor/activity3/filter/LoginFilter.class
 com/nilfactor/activity3/utility/ServiceService.class
 com/nilfactor/activity3/controller/LoginController.class
+com/nilfactor/activity3/userFactory/RandomUsername.class
+com/nilfactor/activity3/userFactory/RandomizeFactory.class
 rest/CORSFilter.class
 data/WeatherDataRepository.class
+com/nilfactor/activity3/userFactory/RandomInfo.class
 data/HibernateUtil.class

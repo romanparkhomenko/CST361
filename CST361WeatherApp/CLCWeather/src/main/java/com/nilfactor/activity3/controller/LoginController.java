@@ -94,7 +94,7 @@ public class LoginController implements Serializable {
 			session.setAttribute("server_message", message);
 		}
 	}
-	
+
 	public User getUser() {
 		// load user from session if it exists
 		if (user == null) {
@@ -104,36 +104,40 @@ public class LoginController implements Serializable {
 				user = User.getUser(username);
 			}
 		}
-		
+
 		return user;
 	}
-	
+
 	public void setUser(User user) {
 		this.user = user;
 	}
 	
 	public String validateLogin() {
-		// lookup user from database
-		user = User.getUser(username);
-		HttpServletRequest req = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
-		HttpSession session = req.getSession(false);
-		
-		// validate login through business logic
-		if (LoginService.isValidLogin(user, username, password)) {
-			// store username in session
-			if (session != null) {
-				session.setAttribute("username", username);
+		try {
+			// lookup user from database
+			user = User.getUser(username);
+			HttpServletRequest req = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+			HttpSession session = req.getSession(false);
+
+			// validate login through business logic
+			if (LoginService.isValidLogin(user, username, password)) {
+				// store username in session
+				if (session != null) {
+					session.setAttribute("username", username);
+				}
+
+				// set welcome message
+				setMessage(user.getFirstName() + "!");
+				return "/app/home.xhtml";
+			} else {
+				// set login failure message
+				setMessage("Invalid username/password");
+				return "/faces/login.xhtml";
 			}
-			
-			// set welcome message
-			setMessage(user.getFirstName() + "!");
-			return "/app/home.xhtml";
+		} catch (Exception e) {
+			setMessage("Whoops, looks like the server is down!");
+			return "/faces/login.xhtml";
 		}
-		
-		// set login failure message
-		setMessage("Invalid username/password");
-		
-		return "/faces/login.xhtml";
 	}
 	
 	public void logout() throws IOException {

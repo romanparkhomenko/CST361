@@ -7,31 +7,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bff4c58-bee2-4c63-930b-88857e9d7d5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rest/CORSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CST361CLCApp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CST361CLCApp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_el_el_ri_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_el_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_faces_javax_faces_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bootsfaces_bootsfaces_1_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_el_impl_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_omnifaces_omnifaces_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_2_jre7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CST361CLCApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CST361CLCApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/model/WeatherData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/rest/WeatherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/faces/register.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/faces/register.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CST361CLCApp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/model/WeatherData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/com/nilfactor/activity3/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/data/HibernateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/app/home.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/resources/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/model/WeatherData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/HibernateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CST361CLCApp/faces/register.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/CST361CLCApp/faces/register.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nilfactor/activity3/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -106,10 +121,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1a2bhl06SyK1dX2U8GaU9tpzsCh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -117,7 +133,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -125,13 +141,17 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nilfactor.activity3.model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3" />
       <recent name="$PROJECT_DIR$/src/main/java/data" />
       <recent name="$PROJECT_DIR$/src/main/java/com/nilfactor/activity3/controller" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nilfactor.activity3.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="JBoss Server.local">
@@ -491,29 +511,6 @@
       <item itemvalue="JBoss Server.JBoss 14.0.11.Final-redhat-00001" />
     </list>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.1395179" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -527,12 +524,28 @@
       <workItem from="1585936768423" duration="565000" />
       <workItem from="1585937355401" duration="6219000" />
       <workItem from="1585946381015" duration="6937000" />
-      <workItem from="1586711085908" duration="10552000" />
+      <workItem from="1586711085908" duration="12223000" />
+      <workItem from="1587145011825" duration="598000" />
+      <workItem from="1587747449936" duration="3255000" />
+      <workItem from="1588531174056" duration="2298000" />
+      <workItem from="1588968660974" duration="7160000" />
     </task>
+    <task id="LOCAL-00001" summary="Logs and error messages when server not up.">
+      <created>1588532903123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588532903123</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Logs and error messages when server not up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Logs and error messages when server not up." />
   </component>
   <component name="WindowStateProjectService">
     <state x="507" y="244" key="#BuildArtifactsBeforeRunChooser" timestamp="1585942624182">
@@ -579,33 +592,69 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="477" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.819@0.23.1440.819" timestamp="1585941691433" />
-    <state width="1177" height="249" key="GridCell.Tab.0.bottom" timestamp="1586721622033">
+    <state x="180" y="23" key="CommitChangelistDialog2" timestamp="1588532901811">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="249" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1586721622033" />
-    <state width="1177" height="249" key="GridCell.Tab.0.center" timestamp="1586721622032">
+    <state x="180" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1588532901811" />
+    <state width="1177" height="249" key="GridCell.Tab.0.bottom" timestamp="1588976532018">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="249" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1586721622032" />
-    <state width="1177" height="249" key="GridCell.Tab.0.left" timestamp="1586721622031">
+    <state width="1177" height="249" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1588976532018" />
+    <state width="1177" height="249" key="GridCell.Tab.0.center" timestamp="1588976532017">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="249" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1586721622031" />
-    <state width="1177" height="249" key="GridCell.Tab.0.right" timestamp="1586721622032">
+    <state width="1177" height="249" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1588976532017" />
+    <state width="1177" height="249" key="GridCell.Tab.0.left" timestamp="1588976532016">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1177" height="249" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1586721622032" />
+    <state width="1177" height="249" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1588976532016" />
+    <state width="1177" height="249" key="GridCell.Tab.0.right" timestamp="1588976532018">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1177" height="249" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1588976532018" />
+    <state width="1177" height="249" key="GridCell.Tab.1.bottom" timestamp="1588971525088">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1177" height="249" key="GridCell.Tab.1.bottom/0.23.1440.819@0.23.1440.819" timestamp="1588971525088" />
+    <state width="1177" height="249" key="GridCell.Tab.1.center" timestamp="1588971525088">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1177" height="249" key="GridCell.Tab.1.center/0.23.1440.819@0.23.1440.819" timestamp="1588971525088" />
+    <state width="1177" height="249" key="GridCell.Tab.1.left" timestamp="1588971525087">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1177" height="249" key="GridCell.Tab.1.left/0.23.1440.819@0.23.1440.819" timestamp="1588971525087" />
+    <state width="1177" height="249" key="GridCell.Tab.1.right" timestamp="1588971525088">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1177" height="249" key="GridCell.Tab.1.right/0.23.1440.819@0.23.1440.819" timestamp="1588971525088" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1585937411048">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1440.819@0.23.1440.819" timestamp="1585937411048" />
-    <state x="258" y="94" key="Maven.ArtifactSearchDialog" timestamp="1585938102117">
+    <state x="295" y="90" key="Maven.ArtifactSearchDialog" timestamp="1587749087334">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="258" y="94" key="Maven.ArtifactSearchDialog/0.23.1440.819@0.23.1440.819" timestamp="1585938102117" />
+    <state x="295" y="90" key="Maven.ArtifactSearchDialog/0.23.1440.819@0.23.1440.819" timestamp="1587749087334" />
+    <state x="144" y="94" key="MergeDialog" timestamp="1588531268482">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="144" y="94" key="MergeDialog/0.23.1440.819@0.23.1440.819" timestamp="1588531268482" />
     <state x="221" y="23" width="1024" height="819" key="SettingsEditor" timestamp="1585938282932">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="221" y="23" width="1024" height="819" key="SettingsEditor/0.23.1440.819@0.23.1440.819" timestamp="1585938282932" />
+    <state x="320" y="172" key="Vcs.Push.Dialog.v2" timestamp="1588532908701">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="320" y="172" key="Vcs.Push.Dialog.v2/0.23.1440.819@0.23.1440.819" timestamp="1588532908701" />
+    <state x="508" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588531190464">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="508" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.819@0.23.1440.819" timestamp="1588531190464" />
+    <state x="421" y="187" width="598" height="490" key="find.popup" timestamp="1588974878946">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="421" y="187" width="598" height="490" key="find.popup/0.23.1440.819@0.23.1440.819" timestamp="1588974878946" />
   </component>
 </project>

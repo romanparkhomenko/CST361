@@ -109,24 +109,32 @@
 							</b:inputText>
 							<b:column col-md="12" style-class="message">
 								<b:message for="phoneNumber" />
-								<c:if test="#{not empty registerController.message}">
-									<b:column col-md="12" styleClass="message">
-										<div>#{registerController.message}</div>
-									</b:column>
-								</c:if>
 							</b:column>
+						</b:column>
+						<b:column col-md="12" style-class="message">
+							<c:if test="#{not empty registerController.message}">
+								<b:column col-md="12" styleClass="message">
+									<div>#{registerController.message}</div>
+								</b:column>
+							</c:if>
 						</b:column>
 					</b:row>
 
-					<b:row>
+					<b:row style="margin-bottom: 5rem;">
 						<b:column col-md="8" offset="2">
 							<b:column col-md="6">
 								<b:commandButton action="#{registerController.register}" value="register" type="submit"
-									look="primary" style="width:100%" />
+												 look="primary" style="width:100%" />
 							</b:column>
 							<b:column col-md="6">
 								<b:button value="back to login" outcome="login.xhtml"
-									look="danger" style="width:100%" />
+										  look="danger" style="width:100%" />
+							</b:column>
+						</b:column>
+						<b:column col-md="8" offset="2">
+							<b:column col-md="12">
+								<b:commandButton action="#{registerController.createRandomUser}" value="Create Random User" type="submit"
+												 look="info" style="width:100%; margin-top: 2rem;" />
 							</b:column>
 						</b:column>
 					</b:row>

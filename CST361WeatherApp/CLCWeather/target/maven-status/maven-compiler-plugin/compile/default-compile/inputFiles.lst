@@ -1,3 +1,4 @@
+/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/userFactory/RandomInfo.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/utility/LogInterceptor.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/WeatherDataRepository.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/model/User.java
@@ -8,7 +9,10 @@
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/entity/UserEntity.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/controller/LoginController.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/model/WeatherData.java
+/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/userFactory/RandomPassword.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/HibernateUtil.java
+/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/userFactory/RandomUsername.java
+/Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/com/nilfactor/activity3/userFactory/RandomizeFactory.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/data/UserEntityRepository.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/rest/CORSFilter.java
 /Users/romanparkhomenko/Documents/GitHub/CST361/CST361WeatherApp/CLCWeather/src/main/java/rest/WeatherService.java
